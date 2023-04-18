@@ -1,7 +1,5 @@
 # vue3-treeselect
-[![npm](https://badgen.now.sh/npm/v/vue3-treeselect)](https://www.npmjs.com/package/vue3-treeselect)  [![Coverage](https://badgen.net/codecov/c/github/komgrip/vue3-treeselect)](https://codecov.io/gh/komgrip/vue3-treeselect?branch=main)
-![npm monthly downloads](https://badgen.now.sh/npm/dm/komgrip/vue3-treeselect)
- [![Known vulnerabilities](https://snyk.io/test/npm/komgrip/vue3-treeselect/badge.svg)](https://snyk.io/test/npm/komgrip/vue3-treeselect) ![License](https://badgen.net/github/license/komgrip/vue3-treeselect)
+[![npm](https://badgen.now.sh/npm/v/vue3-treeselect)](https://www.npmjs.com/package/vue3-treeselect) ![License](https://badgen.net/github/license/komgrip/vue3-treeselect)
 
 > A multi-select component with nested options support for Vue 3. Thank to [riophae](https://github.com/riophae/vue-treeselect) and his sources and library for vue 2 taken as basis.
 
