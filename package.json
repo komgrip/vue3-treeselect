@@ -1,6 +1,6 @@
 {
   "name": "@komgrip/vue3-treeselect",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Tree select hierarchical component for vue 3",
   "main": "dist/vue3-treeselect.common.js",
   "unpkg": "dist/vue3-treeselect.umd.js",
