@@ -1,11 +1,12 @@
 {
   "name": "@komgrip/vue3-treeselect",
-  "version": "1.0.1",
+  "version": "1.0.10",
   "description": "Tree select hierarchical component for vue 3",
   "main": "dist/vue3-treeselect.common.js",
   "unpkg": "dist/vue3-treeselect.umd.js",
   "author": "komgrip",
   "scripts": {
+    "serve": "vue-cli-service serve --target lib --name vue3-treeselect ./demo/index.js",
     "build": "vue-cli-service build --target lib --name vue3-treeselect ./src/index.js && webpack --env.production",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
