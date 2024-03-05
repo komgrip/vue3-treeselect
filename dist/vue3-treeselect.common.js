@@ -5947,7 +5947,6 @@ module.exports = /******/ (function(modules) {
                                     indeterminateNodeIds.push(ancestor.id)
                                 })
                             })
-
                             ;(_internalValue = internalValue).push.apply(
                                 _internalValue,
                                 indeterminateNodeIds
@@ -7534,7 +7533,7 @@ module.exports = /******/ (function(modules) {
                             if (this.single || this.allowClearingDisabled) {
                                 this.forest.selectedNodeIds = []
                             } else {
-                            /* if (this.multiple && !this.allowClearingDisabled) */
+                                /* if (this.multiple && !this.allowClearingDisabled) */
                                 this.forest.selectedNodeIds = this.forest.selectedNodeIds.filter(
                                     function(nodeId) {
                                         return _this20.getNode(nodeId)
@@ -7595,14 +7594,16 @@ module.exports = /******/ (function(modules) {
                             this.traverseDescendantsBFS(node, function(
                                 descendant
                             ) {
-                                console.log('descendant', descendant)
-
                                 if (
                                     !descendant.isDisabled ||
                                     _this21.allowSelectingDisabledDescendants
                                 ) {
-                                    if (_this21.localSearch.active && descendant.isMatched) {
-                                        _this21.addValue(descendant);
+                                    // serach & select only match
+                                    if (
+                                        _this21.localSearch.active &&
+                                        descendant.isMatched
+                                    ) {
+                                        _this21.addValue(descendant)
                                     } else {
                                         isFullyChecked = false
                                     }
@@ -7663,6 +7664,9 @@ module.exports = /******/ (function(modules) {
                         var hasUncheckedSomeDescendants = false
 
                         if (node.isBranch) {
+
+                            this.removeValue(node) // serach & deselect only match
+
                             this.traverseDescendantsDFS(node, function(
                                 descendant
                             ) {
